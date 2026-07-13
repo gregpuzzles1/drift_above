@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071111" />
+  <title>Drift Above</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="experience" aria-label="An uplifting aerial nature animation">
+    <canvas id="sky" aria-hidden="true"></canvas>
+
+    <header class="hud top-hud">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span>DRIFT / ABOVE</span>
+      </div>
+      <div class="flight-status"><span class="pulse"></span> LIVE FLIGHT · <span id="phaseLabel">FIRST LIGHT</span></div>
+    </header>
+
+    <section class="center-copy" aria-live="polite">
+      <p class="eyebrow">A small place to breathe</p>
+      <h1 id="message">You are still becoming.</h1>
+      <p id="subMessage">Let the world move softly beneath you.</p>
+    </section>
+
+    <footer class="hud bottom-hud">
+      <div class="timeline-wrap" aria-label="Flight progress">
+        <div class="time-row"><span id="timeReadout">00:00</span><span>02:30</span></div>
+        <div class="timeline"><span id="progress"></span></div>
+      </div>
+      <div class="controls">
+        <button id="soundButton" type="button" aria-pressed="false" aria-label="Turn on gentle ambient sound">SOUND <span>OFF</span></button>
+        <button id="pauseButton" type="button" aria-pressed="false" aria-label="Pause animation">PAUSE</button>
+        <button id="burstButton" type="button" aria-label="Release a celebration burst">A LITTLE JOY ✦</button>
+      </div>
+    </footer>
+
+    <p class="hint">MOVE YOUR CURSOR TO GENTLY STEER THE VIEW</p>
+  </main>
+  <audio id="ambientAudio" loop preload="auto" aria-hidden="true">
+    <source src="ambient-flight.wav" type="audio/wav" />
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>

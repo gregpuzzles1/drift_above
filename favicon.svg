@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Drift Above</title>
+  <defs>
+    <linearGradient id="sky" x1="9" y1="4" x2="55" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173e38" />
+      <stop offset="1" stop-color="#071111" />
+    </linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="2.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sky)" />
+  <path d="M0 46 15 33l11 9 14-18 24 17v23H0Z" fill="#1e4941" />
+  <path d="m32 13 8.5 8.5L32 30l-8.5-8.5Z" fill="#d5ff79" filter="url(#glow)" />
+  <path d="M45 15h7M48.5 11.5v7M13 19h4M15 17v4" stroke="#d5ff79" stroke-linecap="round" stroke-width="1.5" opacity=".75" />
+</svg>
