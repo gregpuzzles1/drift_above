@@ -8,6 +8,10 @@ Drift Above began as a prompt asking for a small, calming place to help lift the
 
 The project is intentionally lightweight and self-contained, so it can be opened whenever a quiet visual reset is welcome.
 
+## Live site
+
+Visit **Drift Above** at https://gregpuzzles1.github.io/drift_above/
+
 ## Running it
 
 Open [index.html](index.html) in a modern browser to begin. Use **Pause**, **Sound**, and **A Little Joy** in the lower-right controls. Mouse movement gently offsets the camera view.
